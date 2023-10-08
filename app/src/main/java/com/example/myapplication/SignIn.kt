@@ -14,12 +14,23 @@ class SignIn : AppCompatActivity() {
 
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val emailCorrect="hamza";
+        val passCorrect="123";
+
 
         binding.signInBtn.setOnClickListener {
             val email=binding.et1.text.toString();
             val password=binding.et2.text.toString();
-            Toast.makeText(applicationContext,email,Toast.LENGTH_SHORT).show();
-            Toast.makeText(applicationContext,password,Toast.LENGTH_SHORT).show()
+
+            if ((email == emailCorrect) && (password == passCorrect)) {
+                Toast.makeText(applicationContext, "Login Successful", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(
+                    applicationContext,
+                    "Login Failed",
+                    Toast.LENGTH_SHORT
+                ).show();
+            }
         }
         binding.signuptv.setOnClickListener {
             val Intent=Intent(this, MainActivity::class.java)

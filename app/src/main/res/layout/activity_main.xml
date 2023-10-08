@@ -9,14 +9,14 @@
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_marginLeft="10sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="36dp"
         android:text="Enter your Name"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
 
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:layout_marginLeft="10sp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="84dp"
         android:hint="Enter your name"
         android:inputType="text"
         android:textSize="20sp"
@@ -36,11 +36,40 @@
     </EditText>
 
     <TextView
+        android:id="@+id/tvage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="172dp"
+        android:text="Enter your Age"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/etage"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="224dp"
+        android:hint="Enter your age"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <TextView
         android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="320dp"
         android:text="Enter your email"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:layout_marginLeft="10sp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="372dp"
         android:hint="Enter email here"
         android:inputType="text"
         android:textSize="20sp"
@@ -68,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
-        android:layout_marginTop="392dp"
+        android:layout_marginTop="460dp"
         android:text="Enter your Password"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,12 +110,12 @@
         android:layout_width="match_parent"
         android:layout_height="73dp"
         android:layout_marginLeft="10sp"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="512dp"
         android:hint="Enter password here"
         android:inputType="textPassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -96,12 +125,12 @@
         android:id="@+id/signUpBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="48dp"
         android:text="SignUp"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent">
 
     </androidx.appcompat.widget.AppCompatButton>

@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,9 +13,21 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
         binding.signUpBtn.setOnClickListener {
-            val intent = Intent(this, SignIn::class.java)
-            startActivity(intent)
+            var userAge=binding.etage.text.toString();
+
+            if (userAge .equals(18) ){
+                val intent = Intent(this, SignIn::class.java)
+                startActivity(intent);
+                Toast.makeText(applicationContext,"Sign Up successful",Toast.LENGTH_SHORT).show();
+
+            } else {
+                Toast.makeText(applicationContext,"You are restricted",Toast.LENGTH_SHORT).show();
+            }
+
         }
     }
 }
