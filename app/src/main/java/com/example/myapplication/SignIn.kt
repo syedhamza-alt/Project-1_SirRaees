@@ -34,7 +34,7 @@ class SignIn : AppCompatActivity() {
         }
         binding.signuptv.setOnClickListener {
             val Intent=Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent)
         }
     }
 }
