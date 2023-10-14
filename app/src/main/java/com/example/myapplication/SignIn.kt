@@ -24,6 +24,8 @@ class SignIn : AppCompatActivity() {
 
             if ((email == emailCorrect) && (password == passCorrect)) {
                 Toast.makeText(applicationContext, "Login Successful", Toast.LENGTH_SHORT).show();
+                val Intent3=Intent(this, recyclerActivity::class.java);
+                startActivity(Intent3);
             } else {
                 Toast.makeText(
                     applicationContext,
